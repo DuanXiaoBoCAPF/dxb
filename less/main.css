@@ -1,0 +1,440 @@
+@charset "utf-8";
+/*主体模块*/
+/*用来定义变量*/
+/*用来定义方法*/
+/*适配模块*/
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 53.33333333px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+/*模块*/
+/*初始化*/
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline-style: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*样式*/
+.NARUTO_layout {
+  width: 100%;
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  margin: 0 auto;
+}
+.NARUTO_layout .NARUTO_search {
+  width: 100%;
+  background-color: #e23030;
+  height: 1.2rem;
+  position: relative;
+}
+.NARUTO_layout .NARUTO_search .search-left a {
+  position: absolute;
+  left: 0.12rem;
+  top: 0.14rem;
+}
+.NARUTO_layout .NARUTO_search .search-left a img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.NARUTO_layout .NARUTO_search .search-left .logo-1 {
+  position: absolute;
+  color: white;
+  font-size: 0.18rem;
+  left: 60px;
+  top: 10px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+.NARUTO_layout .NARUTO_search .search-left .logo-2 {
+  position: absolute;
+  color: white;
+  font-size: 0.12rem;
+  left: 60px;
+  bottom: 10px;
+}
+.NARUTO_layout .NARUTO_search .search-right a {
+  position: absolute;
+  right: 10px;
+  top: 12.5px;
+  background-color: #244a87;
+  color: white;
+  width: 102px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+  box-shadow: #080808 0 0 2px 2px;
+  text-align: center;
+}
+.NARUTO_banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.NARUTO_banner ul {
+  transform: translateX(-16.66666667%);
+  -webkit-transform: translateX(-16.66666667%);
+}
+.NARUTO_banner ul:first-child {
+  width: 600%;
+}
+.NARUTO_banner ul:first-child li {
+  width: 16.66666667%;
+  float: left;
+}
+.NARUTO_banner ul:first-child li a {
+  display: block;
+  width: 100%;
+}
+.NARUTO_banner ul:first-child li a img {
+  display: block;
+  width: 100%;
+}
+.NARUTO_banner ul:last-child {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.2rem;
+}
+.NARUTO_banner ul:last-child li {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  margin-left: 0.1rem;
+}
+.NARUTO_banner ul:last-child li.now {
+  background-color: #e23030;
+}
+.NARUTO_video {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 40px;
+  font-family: "Microsoft YaHei", sans-serif;
+  position: relative;
+  padding-bottom: 10px;
+}
+.NARUTO_video .video_top {
+  width: 100%;
+}
+.NARUTO_video .video_top a {
+  color: #244a87;
+}
+.NARUTO_video .video_content {
+  width: 100%;
+}
+.NARUTO_video .video_content .video_left {
+  float: left;
+  width: 45%;
+  position: relative;
+}
+.NARUTO_video .video_content .video_left a {
+  width: 100%;
+  display: block;
+}
+.NARUTO_video .video_content .video_left a img {
+  width: 100%;
+  z-index: 9;
+  position: absolute;
+  opacity: 0.9;
+}
+.NARUTO_video .video_content .video_left span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  left: 0;
+  bottom: -8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-left: 10px;
+}
+.NARUTO_video .video_content .video_left video {
+  width: 100%;
+  position: relative;
+  bottom: 1px;
+}
+.NARUTO_video .video_content .video-right {
+  width: 45%;
+  float: right;
+  position: relative;
+}
+.NARUTO_video .video_content .video-right a {
+  width: 100%;
+  display: block;
+}
+.NARUTO_video .video_content .video-right a img {
+  width: 100%;
+  z-index: 9;
+  position: absolute;
+  opacity: 0.9;
+}
+.NARUTO_video .video_content .video-right span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  left: 0;
+  bottom: -8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-left: 10px;
+}
+.NARUTO_video .video_content .video-right video {
+  width: 100%;
+  position: relative;
+  bottom: 1px;
+}
+.tab-pane {
+  width: 100%;
+}
+.tab-pane ul {
+  width: 100%;
+}
+.tab-pane ul li {
+  width: 100%;
+  position: relative;
+}
+.tab-pane ul li a {
+  width: 100%;
+}
+.tab-pane ul li a span {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../images/infor.png");
+}
+.tab-pane ul li a p {
+  padding-left: 15px;
+}
+.NARUTO_footer {
+  width: 100%;
+  height: 220px;
+  background-color: #32323a;
+  color: #575769;
+  padding-top: 10px;
+}
+.NARUTO_footer .footer_logo {
+  width: 100%;
+}
+.NARUTO_footer .footer_logo p {
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+.NARUTO_footer .footer_logo p:nth-child(1) img {
+  width: 25%;
+}
+.NARUTO_footer .footer_logo p:nth-child(2) {
+  width: 100%;
+}
+.NARUTO_footer .footer_logo p:nth-child(3) {
+  width: 100%;
+}
+.NARUTO_footer .footer_bottom {
+  width: 100%;
+}
+.NARUTO_footer .footer_bottom p {
+  width: 100%;
+}
+.NARUTO_best {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #1f3961;
+}
+.NARUTO_best ul {
+  width: 100%;
+}
+.NARUTO_best ul li {
+  position: relative;
+  width: 20%;
+  float: left;
+}
+.NARUTO_best ul li a {
+  display: block;
+  width: 100%;
+}
+.NARUTO_best ul li a img {
+  position: absolute;
+  left: 17px;
+  top: 10px;
+  width: 100%;
+  width: 30px;
+  height: 30px;
+}
+.NARUTO_best ul li a p {
+  position: relative;
+  top: 40px;
+  text-align: center;
+}
+.totot {
+  width: 100%;
+}
+.totot img {
+  width: 100%;
+}
+.enter {
+  position: relative;
+  top: -10px;
+  width: 100%;
+  height: 400px;
+  background-color: #e23030;
+}
+.enter a {
+  z-index: 99;
+  display: block;
+  width: 25%;
+  margin-left: 28%;
+  padding-top: 22%;
+  position: absolute;
+}
+.enter a img {
+  width: 100%;
+}
+.enter img {
+  display: block;
+  width: 25%;
+  margin-left: 38%;
+  padding-top: 45%;
+  position: absolute;
+}
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner ul {
+  transform: translateX(-25%);
+  -webkit-transform: translateX(-25%);
+}
+.banner ul:first-child {
+  width: 400%;
+}
+.banner ul:first-child li {
+  width: 25%;
+  float: left;
+}
+.banner ul:first-child li a {
+  display: block;
+  width: 100%;
+}
+.banner ul:first-child li a img {
+  display: block;
+  width: 100%;
+}
+.banner ul:last-child {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.2rem;
+}
+.banner ul:last-child li {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  margin-left: 0.1rem;
+}
+.banner ul:last-child li.now {
+  background-color: #e23030;
+}
+.TMD {
+  width: 100%;
+  height: 420px;
+}
+.TMD video {
+  width: 100%;
+  margin-top: -20px;
+}
+.TMD img {
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 10%;
+}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*模块*/
+/*初始化*/
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline-style: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+/*样式*/
+.NARUTO_layout {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.NARUTO_layout .NARUTO_search {
+  background-color: #e23030;
+  height: 60px;
+  position: relative;
+}
+.NARUTO_layout .NARUTO_search .search-left a {
+  position: absolute;
+  left: 10px;
+  top: 7.5px;
+}
+.NARUTO_layout .NARUTO_search .search-left a img {
+  width: 45px;
+  height: 45px;
+}
+.NARUTO_layout .NARUTO_search .search-left .logo-1 {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  left: 60px;
+  top: 10px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+.NARUTO_layout .NARUTO_search .search-left .logo-2 {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  left: 60px;
+  bottom: 10px;
+}
+.NARUTO_layout .NARUTO_search .search-right input {
+  position: absolute;
+  right: 0;
+}

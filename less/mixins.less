@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*用来定义方法*/
+
+//length(@deviceWidthArr)获取数组长度
+//extract(@deviceWidthArr，1)获取数组序号
+
+.adapterFuc(@index) when (@index <= length(@deviceWidthArr)){
+  @media (min-width: extract(@deviceWidthArr,@index)) {
+    html{
+      font-size: extract(@deviceWidthArr,@index)/@psdwidth*@baseSize;
+    }
+  }
+  .adapterFuc(@index+1);  //自调用
+}
